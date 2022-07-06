@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
-}
+.App-style {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: #f6f8fa;
+  height: 10000px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 100%;
+  height: 150px;
+  background-color: white ;
+border-bottom: 5px #232f61 solid;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-signin{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height:100%;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.block-content{
   display: flex;
   flex-direction: column;
+  justify-items: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: #232f61 solid 5px;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+}
+.icon-size{
+  width: 200px;
+  height: 240px;
+  color: #e83c4c;
+}
+.title-icon{
+  background-color: #232f61;
   color: white;
+  font-weight: 200;
+  font-size: 30px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+  background: #f6f8fa;
+  width: 300px;
+  margin-top: 30px;
+
+}
+
+.content-flex{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navBar{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ec6e15 3px solid;
+}
+.navBar-details{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-height: 90px;
+  font-size: 14x;
+  width: 100%;
+  color: #232f61;
+ 
+
+}
+.avatar-style{
+  display: flex;
+  align-items: center;
+  max-height: 90px;
+  margin:10px;
+}
+.search{
+  margin: 20px;
 }

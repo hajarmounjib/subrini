@@ -1,0 +1,60 @@
+
+.global-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+
+}
+.SingnIn-picture{
+    width : 50%;
+    height: 100vh;
+  
+}
+
+.signIn-form{
+  background-color:#3daf8d;
+  width : 50%;
+  height: 100vh;
+
+}
+.choice{
+  display: flex;
+  background-color:  white;
+  border-radius: 15px;
+  padding: 0;
+  height: 30px;
+  width:50%; 
+  text-align: center; 
+  margin: 0 10px 20px 30px;
+}
+
+li{
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+ul{
+  display: block;
+  width: 120px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #3daf8d;
+  margin-left: 25px;
+  
+}
+
+ul:hover{
+  background-color: #3daf8d;
+  border: 1px solid white;
+  width: 120px;
+  color: white;
+  opacity: 0.9;
+  height: 30px;
+  border: 3px solid white;
+}
