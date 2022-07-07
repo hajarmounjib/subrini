@@ -36,25 +36,34 @@ li{
   margin-bottom: 25px;
   justify-content: center;
 }
-ul{
-  display: block;
-  width: 120px;
+.unordred-list{
+  display: flex;
+  justify-content: space-around;
+  width: 125px;
   height: 30px;
   margin: 0;
   padding: 0;
   border-radius: 15px;
   font-size: 16px;
   color: #3daf8d;
-  margin-left: 25px;
+  border: 3px solid white;
   
 }
 
-ul:hover{
-  background-color: #3daf8d;
-  border: 1px solid white;
-  width: 120px;
-  color: white;
-  opacity: 0.9;
+.unordred-list-condition{
+  display: block;
+  width: 125px;
   height: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius :  15px;
+  font-size: 16px;
+  color: white;
+  background-color: #3daf8d;
+
   border: 3px solid white;
+ 
+  opacity: 0.9;
+  
+ 
 }

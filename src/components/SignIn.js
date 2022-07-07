@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
@@ -7,6 +7,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../SignIn.css';
 
 function SignIn(props) {
+    var badge_choice =[ 'Administration','Enseignants', 'Eleves', 'Parents']
+    const [choice, setChoice] = useState('Administration')
+    const [toggleTabs, setToggleTabs] = useState(true)
+    var classChoice = ''
+    const toggleTab = (index) => {
+        setChoice(index)
+        console.log('index',index)
+    }
+
     return (
         <div className="global-content">
             <div className="SingnIn-picture">
@@ -21,10 +30,17 @@ function SignIn(props) {
                 <div style={{ display: 'flex',flexDirection:'row', justifyContent:'center' }} >
                 <p style={{ color: "white" }}>Vous êtes ?</p>
                     <li className="choice">
-                        <ul className="unordred-list" onClick={()=>console.log('Administration')} >Administration</ul>
-                        <ul className="unordred-list" onClick={()=>console.log('Enseignant')}>Enseignant</ul>
-                        <ul className="unordred-list" onClick={()=>console.log('Parents')}>Parents</ul>
-                        <ul className="unordred-list"onClick={()=>console.log('Eleves')}>Elève</ul>
+                        {
+                            badge_choice.map((e,i)=> {
+                                return (
+                                    <>    <ul className={choice === e ? 'unordred-list-condition' : 'unordred-list'} onClick={()=>toggleTab(e)}>{e}</ul>
+                                    </>
+                                )
+
+                                
+                            })
+                        }
+                    
                     </li>
                 </div>
                 <Form inline style={{ width: "60%", textAlign: 'center', margin: '0 250px' }}>
