@@ -6,17 +6,18 @@ import HomePage from './components/HomePage'
 import SignIn from './components/SignIn';
 import ContentPage from './components/ContentPage'
 import Navigation from './components/Navigation';
+import HomePageAdministration from './components/Administration/HomePageAdministration'
+import Inscription from './components/Administration/Inscription'
 
 
 function App() {
   return (
     <Router >
   <Switch>
-    <Route component={SignIn} exact path="/"  />
-    <Route component={ContentPage} exact path="/home"  />
+    <Route component={Inscription} exact path="/"  />
+    <Route component={HomePageAdministration} exact path="/home"  />
 
     <Route component={HomePage} exact path="/home12"  />
-    <Route component={Navigation} exact path="/navigation"  />
       </Switch> 
       </Router>
   );

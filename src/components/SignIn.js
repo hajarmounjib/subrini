@@ -7,22 +7,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../SignIn.css';
 
 function SignIn(props) {
-    var badge_choice =[ 'Administration','Enseignants', 'Eleves', 'Parents']
+    var badge_choice =[ 'Administration','Enseignants', 'Elèves', 'Parents']
     const [choice, setChoice] = useState('Administration')
     const [toggleTabs, setToggleTabs] = useState(true)
-    var classChoice = ''
+    var classChoice = '{}'
     const toggleTab = (index) => {
         setChoice(index)
         console.log('index',index)
+     
     }
+    console.log('choice out',choice)
+if(choice === 'Administration'){
+classChoice = 'signIn-form-administration'
+}else if (choice === 'Enseignants'){
+    classChoice = 'signIn-form-enseignants'
+}else if(choice === 'Elèves'){
+    classChoice = 'signIn-form-elèves'
+}else if(choice === 'Parents'){
+    classChoice = 'signIn-form-parents'
+}
 
     return (
         <div className="global-content">
-            <div className="SingnIn-picture">
+            <div className="SingnIn-picture" >
                 <img src="/photo_SignIN.png" alt="logo" width="100%" height="100%" />
             </div>
 
-            <div className="signIn-form">
+            <div  className= {classChoice}>
                 <p style={{ color: 'white', fontSize: "45px", textAlign: 'center', marginTop: '250px' }}> Bienvenue dans votre espace privé</p>
                 <p style={{ color: 'white', fontSize: "20px", textAlign: 'center', marginBottom: "50px", marginLeft: "10px" }}> Subrini vous rapproche le plus de la vie scolaire de votre enfant avec son nouveau système de gestion scolaire</p>
                 
@@ -33,14 +44,11 @@ function SignIn(props) {
                         {
                             badge_choice.map((e,i)=> {
                                 return (
-                                    <>    <ul className={choice === e ? 'unordred-list-condition' : 'unordred-list'} onClick={()=>toggleTab(e)}>{e}</ul>
+                                    <>    <ul className={choice === e ? 'unordred-list-condition-'+e : 'unordred-list'} onClick={()=>toggleTab(e)}>{e}</ul>
                                     </>
-                                )
-
-                                
+                                )                                
                             })
-                        }
-                    
+                        }   
                     </li>
                 </div>
                 <Form inline style={{ width: "60%", textAlign: 'center', margin: '0 250px' }}>

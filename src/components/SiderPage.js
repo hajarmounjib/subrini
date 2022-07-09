@@ -1,7 +1,6 @@
 import React from "react";
 import '../App.css';
 import 'antd/dist/antd.css';
-import 'antd/dist/antd.css';
 import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import {  Layout, Menu } from 'antd';
 

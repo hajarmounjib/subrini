@@ -3,21 +3,42 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-
-
 }
+
 .SingnIn-picture{
     width : 50%;
     height: 100vh;
-  
 }
 
 .signIn-form{
   background-color:#3daf8d;
   width : 50%;
   height: 100vh;
-
 }
+
+.signIn-form-administration{
+  background-color:#3daf8d;
+  width : 50%;
+  height: 100vh;
+}
+
+.signIn-form-enseignants{
+  background-color:#1d2751;
+  width : 50%;
+  height: 100vh;
+}
+
+.signIn-form-elèves{
+  background-color:#f2b003;
+  width : 50%;
+  height: 100vh;
+
+}.signIn-form-parents{
+  background-color:#e53b4a;
+  width : 50%;
+  height: 100vh;
+}
+
 .choice{
   display: flex;
   background-color:  white;
@@ -36,34 +57,70 @@ li{
   margin-bottom: 25px;
   justify-content: center;
 }
+
 .unordred-list{
   display: flex;
   justify-content: space-around;
   width: 125px;
   height: 30px;
-  margin: 0;
+  margin:  0px 5px 0px 5px;
   padding: 0;
   border-radius: 15px;
   font-size: 16px;
-  color: #3daf8d;
   border: 3px solid white;
-  
 }
 
-.unordred-list-condition{
+.unordred-list-condition-Administration{
   display: block;
   width: 125px;
   height: 30px;
-  margin: 0;
+  margin:  0px 5px 0px 5px;
   padding: 0;
   border-radius :  15px;
   font-size: 16px;
   color: white;
   background-color: #3daf8d;
-
-  border: 3px solid white;
- 
+  border: 2px solid white;
   opacity: 0.9;
-  
- 
+}
+
+.unordred-list-condition-Elèves{
+  display: block;
+  width: 125px;
+  height: 30px;
+  margin:  0px 5px 0px 5px;
+  padding: 0;
+  border-radius :  15px;
+  font-size: 16px;
+  color: white;
+  background-color: #f2b003;
+  border: 2px solid white;
+  opacity: 0.9;
+}
+
+.unordred-list-condition-Enseignants{
+  display: block;
+  width: 125px;
+  height: 30px;
+  margin:  0px 5px 0px 5px;
+  padding: 0;
+  border-radius :  15px;
+  font-size: 16px;
+  color: white;
+  background-color: #1d2751;
+  border: 2px solid white;
+  opacity: 0.9;
+}
+.unordred-list-condition-Parents{
+  display: block;
+  width: 125px;
+  height: 30px;
+  margin:  0px 5px 0px 5px;
+  padding: 0;
+  border-radius :  15px;
+  font-size: 16px;
+  color: white;
+  background-color: #e53b4a;
+  border: 2px solid white;
+  opacity: 0.9;
 }

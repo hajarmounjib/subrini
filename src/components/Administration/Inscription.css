@@ -1,0 +1,106 @@
+  .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+  }
+    [data-theme="dark"] .site-layout .site-layout-background {
+      background: #141414;
+    }
+
+
+
+.site-layout-background{
+display: grid;
+
+grid-template-areas:"g g g g"
+                    "a b c d"
+                    "e e f f"
+                    
+                    ;
+
+
+
+}
+.grid-item-1{
+    grid-area: a;
+    height: 290px;
+    margin-bottom: 20px;
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 0px 15px 15px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+   
+}
+.grid-item-2{
+    grid-area: b;
+    height: 290px;
+    border:rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 0 15px 15px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+}
+.grid-item-3{
+    grid-area: c;
+    height: 290px;
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 0 15px 15px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+}
+.grid-item-4{
+    grid-area: d;
+    height: 290px;
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 0 15px 15px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+}
+.grid-item-5{
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 20px 15px 20px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+    height: 290px;
+    grid-area: e;
+    margin-bottom: 20px;
+}
+.grid-item-6{
+    grid-area: f;
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 20px 15px 20px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+    margin-bottom: 20px;
+    height: 290px;
+}
+.grid-item-7{
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 0 15px 15px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+    height: 290px;
+    grid-area: g;
+    margin-bottom: 20px;
+     
+}
+.grid-item-8{
+    grid-area: h;
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 0 15px 15px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+    margin-bottom: 20px;
+}
+.grid-item-9{
+    border: rgba(1, 20, 41, .3) 1px solid;
+    border-radius: 10px ;
+    margin: 0 15px 15px 15px;
+    box-shadow: 5px 5px 5px rgba(1, 20, 41, .3);
+    grid-area: i;
+    margin-bottom: 20px;
+}
+
